@@ -1,5 +1,7 @@
 // src/util/footer.js
 const img = (path) => `/img/${path}`;
+import { FaInstagramSquare, FaYoutube } from "react-icons/fa";
+import { RiKakaoTalkFill } from "react-icons/ri";
 
 // 로고
 export const logoData = {
@@ -19,7 +21,14 @@ export const companyData = [
   "수출문의 : 해외영업팀 sales1@thepicton.com",
   "특판&대량구매문의 : 국내영업팀 sales@thepicton.com",
 ];
-
+export const footerLegal = {
+  copyright: "COPYRIGHT© 주식회사 픽톤 2021 TOCOBO. ALL RIGHT RESERVED.",
+  links: [
+    { label: "이용약관", href: "/terms" },
+    { label: "개인정보처리방침", href: "/privacy" },
+    { label: "이용안내", href: "/guide" }
+  ]
+};
 // 고객센터
 export const customerCenterData = {
   title: "Customer Center",
@@ -62,5 +71,26 @@ export const footerMenus = [
       { label: "Review", href: "/review" },
       { label: "1:1 CS", href: "/cs" },
     ],
+  },
+];
+
+export const socialLinks = [
+  {
+    id: "kakao",
+    label: "KakaoTalk 채널",
+    href: "https://pf.kakao.com/your-channel",
+    icon: RiKakaoTalkFill
+  },
+  {
+    id: "instagram",
+    abel: "Instagram",
+    href: "https://www.instagram.com/your-instagram",
+    icon: FaInstagramSquare
+  },
+  {
+    id: "youtube", 
+    label: "YouTube",
+    href: "https://www.youtube.com/@your-youtube",
+    icon: FaYoutube
   },
 ];
